@@ -1,0 +1,9 @@
+{
+  "name": "examplenodejsapi",
+  "description": "Example Node.js API application.",
+  "author": "Jeff Geerling <geerlingguy@mac.com>",
+  "dependencies": {
+    "restify": "3.x.x"
+  },
+  "engine": "node >= 0.10.6"
+}
