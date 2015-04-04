@@ -1,5 +1,7 @@
 # Demonstration Node.js API Application
 
+[![Build Status](https://travis-ci.org/geerlingguy/demo-nodejs-api.svg?branch=master)](https://travis-ci.org/geerlingguy/demo-nodejs-api)
+
 This repository contains an extremely simple Node.js API app.
 
 The app is meant for demonstration purposes in [Ansible for DevOps](http://ansiblefordevops.com/), a book on [Ansible](http://www.ansible.com/) by [Jeff Geerling](http://jeffgeerling.com/). See, specifically, the [rolling deployments example](https://github.com/geerlingguy/ansible-for-devops/tree/master/rolling-deployments) in the official Ansible for DevOps repository.
