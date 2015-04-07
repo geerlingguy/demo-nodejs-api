@@ -5,7 +5,8 @@
   "dependencies": {
     "restify": "3.x.x",
     "mocha": "2.2.x",
-    "hippie": "0.3.x"
+    "hippie": "0.3.x",
+    "jjg-ping": "1.x.x"
   },
   "scripts": {
     "test": "mocha test"

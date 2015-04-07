@@ -1,17 +1,27 @@
-// Simple Node.js API application.
-// @see http://mcavage.me/node-restify/#server-api
-
-// Load the restify module.
+// Simple Node.js API application using restify.
 var restify = require('restify');
-
-function respond(req, res, next) {
-  res.send('hello ' + req.params.name);
-  next();
-}
+var ping = require('jjg-ping');
 
 var server = restify.createServer();
-server.get('/hello/:name', respond);
-server.head('/hello/:name', respond);
+
+// Greeting endpoint.
+server.get('/hello/:name', function(req, res, next) {
+  res.send('hello ' + req.params.name);
+  next();
+});
+
+// Ping endpoint.
+server.get('/ping/:server', function(req, res, next) {
+  ping.system.ping(req.params.server, function(latency, status) {
+    if (status) {
+      res.send(req.params.server + ' is reachable (' + latency + ' ms ping).');
+    }
+    else {
+      res.send(req.params.server + ' is not quite correct.');
+    }
+    next();
+  });
+});
 
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);
