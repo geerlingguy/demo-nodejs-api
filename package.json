@@ -3,10 +3,10 @@
   "description": "Example Node.js API application.",
   "author": "Jeff Geerling <geerlingguy@mac.com>",
   "dependencies": {
-    "restify": "3.x.x",
+    "hippie": "^0.5.2",
+    "jjg-ping": "1.x.x",
     "mocha": "2.2.x",
-    "hippie": "0.3.x",
-    "jjg-ping": "1.x.x"
+    "restify": ">=4.1.0"
   },
   "scripts": {
     "test": "mocha test"
