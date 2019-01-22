@@ -4,7 +4,7 @@
   "author": "Jeff Geerling <geerlingguy@mac.com>",
   "dependencies": {
     "hippie": "^0.5.2",
-    "jjg-ping": "1.x.x",
+    "jjg-ping": "^1.0.3",
     "mocha": "^5.2.0",
     "restify": ">=4.1.0"
   },
