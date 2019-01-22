@@ -17,7 +17,7 @@ server.get('/ping/:server', function(req, res, next) {
       res.send(req.params.server + ' is reachable (' + latency + ' ms ping).');
     }
     else {
-      res.send(req.params.server + ' is unreachable.');
+      res.send(req.params.server + ' is not quite correct.');
     }
     next();
   });
